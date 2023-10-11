@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOUSE PRICE PREDICTOR</title>
+</head>
+<body>
+    <h1>Linear Regression Predictor</h1>
+    
+    <form method="POST" action="/predict">
+        <label for="avg_income">Avg. Area Income:</label>
+        <input type="number" step="any" id="avg_income" name="avg_income" required><br><br>
+
+        <label for="house_age">Avg. Area House Age:</label>
+        <input type="number" step="any" id="house_age" name="house_age" required><br><br>
+
+        <label for="num_rooms">Avg. Area Number of Rooms:</label>
+        <input type="number" step="any" id="num_rooms" name="num_rooms" required><br><br>
+
+        <label for="num_bedrooms">Avg. Area Number of Bedrooms:</label>
+        <input type="number" step="any" id="num_bedrooms" name="num_bedrooms" required><br><br>
+
+        <label for="population">Area Population:</label>
+        <input type="number" step="any" id="population" name="population" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+    <h4>INR {{predict}}/-</h4>
+</body>
+</html>
